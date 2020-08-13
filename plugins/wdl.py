@@ -1,6 +1,10 @@
 import os
 import subprocess
-
+def bar_progress(current, total, width=80):
+  progress_message = "Downloading: %d%% [%d / %d] bytes" % (current / total * 100, current, total)
+  # Don't use print() as it will print in new line every time.
+  sys.stdout.write("\r" + progress_message)
+  sys.stdout.flush()
 def wget_dl(url, bar=bar_thermometer):
         try:
             print("Downloading Started")
