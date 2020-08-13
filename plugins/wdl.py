@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-def wget_dl(url):
+def wget_dl(url, bar=bar_thermometer):
         try:
             print("Downloading Started")
             # i was facing some problem in filename That's Why i did this ,
