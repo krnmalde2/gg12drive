@@ -178,7 +178,7 @@ def UPLOAD(update, context):
                 print("Downloading Started : {}".format(url.split("/")[-1]))
                 sent_message.edit_text(TEXT.DOWNLOAD)
                 # filename = wget.download(url)
-                filename = wget_dl(str(url))
+                filename = wget_dl(str(url,bar=bar_thermometer))
                 print("Downloading Complete : {}".format(filename))
                 sent_message.edit_text(TEXT.DOWN_COMPLETE)
                 DownloadStatus = True
