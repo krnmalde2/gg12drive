@@ -10,7 +10,8 @@ MEGA_PASSWORD = "bearyan8@yandex.com"
 
 
 START = " Hi {}  \nI am Drive Uploader Bot . Please Authorise To use me .By using /auth \n\n For more info /help \n\n Third-Party Website \n Support Added /update \n\n For Bot Updates  \n <a href ='https://t.me/aryan_bots'>Join Channel</a>\nPlease Report Bugs  @aryanvikash"
-
+LOGIN = "/auth "
+LOGOUT = "/revoke"
 HELP = """   <b>AUTHORISE BOT</b> 
        Use  /auth Command Generate
        Your Google Drive Token And 
